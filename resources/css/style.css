@@ -9,4 +9,5 @@ html {
   box-sizing: border-box;
   color: var(--color);
   background-color: var(--parent-bg);
+  font-family: "MondaReg", Arial, Helvetica, sans-serif;
 }
