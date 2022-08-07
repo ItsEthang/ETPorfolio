@@ -1,8 +1,9 @@
+/* Global */
 :root {
-  --parent-bg: #534f5c;
-  --color: #d7dfac;
-  --bg: #333044;
-  --border: #73615a;
+  --parent-bg: hsl(258, 8%, 34%);
+  --color: hsl(69, 44%, 77%);
+  --bg: hsl(249, 17%, 23%);
+  --border: hsl(17, 12%, 40%);
 }
 html {
   font-size: clamp(12px, 16px, 16px);
@@ -10,4 +11,182 @@ html {
   color: var(--color);
   background-color: var(--parent-bg);
   font-family: "MondaReg", Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  line-height: 2rem;
+}
+body {
+  margin: 0;
+  background-image: url(../images/nathan-anderson-NAV4nIjgwPk-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main {
+  position: relative;
+  top: 5rem;
+}
+h1,
+h2 {
+  font-family: "JuliusSans", sans-serif;
+}
+/* Waves */
+.wave1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave1 svg {
+  position: relative;
+  display: block;
+  width: calc(114% + 1.3px);
+  height: 76px;
+}
+
+.wave1 .shape-fill {
+  fill: #343145;
+}
+
+.wave2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave2 svg {
+  position: relative;
+  display: block;
+  width: calc(262% + 1.3px);
+  height: 52px;
+}
+
+.wave2 .shape-fill {
+  fill: #343145;
+}
+
+.wave {
+  position: relative;
+}
+/* Header Section */
+header {
+  background-color: var(--bg);
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  border-bottom: 1px solid var(--border);
+}
+header .container {
+  background-color: var(--bg);
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  padding: 0 2rem;
+}
+header .logo {
+  color: var(--color);
+  display: block;
+  font-family: "JuliusSans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  flex: 1;
+}
+header nav {
+  color: var(--color);
+  display: block;
+}
+header nav ul {
+  display: flex;
+  padding-left: 1.5rem;
+  list-style-type: none;
+}
+header nav li {
+  padding-left: 5rem;
+}
+header a {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-decoration: none;
+}
+header nav a:link {
+  color: var(--color);
+}
+header nav a:visited {
+  color: var(--color);
+}
+header nav a:hover {
+  cursor: pointer;
+  color: var(--border);
+}
+header nav a:active {
+  font-size: 0.95rem;
+  color: var(--border);
+}
+
+/* Page Hero */
+.page-hero {
+  position: relative;
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+.page-hero h1 {
+  font-family: "JuliusSans", sans-serif;
+  font-size: 3.5rem;
+}
+.page-hero img {
+  height: 7rem;
+  width: 7rem;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 0.5rem white;
+  border-radius: 50%;
+}
+.page-hero .container {
+  border-radius: 5%;
+  background-color: hsla(249, 17%, 23%, 0.5);
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  padding: 2rem 3rem;
+}
+.page-hero a {
+  color: var(--color);
+  font-size: 1.2rem;
+}
+.page-hero .medias {
+  display: flex;
+  justify-content: space-evenly;
+}
+/* About */
+#about {
+  padding: 0 10vw 3vh 10vw;
+  width: 80vw;
+  background-color: var(--bg);
+}
+#about h2 {
+  margin-top: 0;
+  text-decoration: underline;
+  text-underline-position: under;
+}
+/* Project */
+.project {
+  margin: 3rem 0 1.2rem 0;
+  text-align: center;
+}
+.project i {
+  margin: 0 1rem;
+  color: white;
+}
+#projects {
+  background-color: var(--parent-bg);
+  text-align: center;
 }
