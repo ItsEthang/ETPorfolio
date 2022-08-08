@@ -14,6 +14,7 @@ html {
   font-family: "MondaReg", Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   line-height: 2rem;
+  overflow-x: hidden;
 }
 body {
   padding: 0;
@@ -31,6 +32,9 @@ main {
 h1,
 h2 {
   font-family: "JuliusSans", sans-serif;
+}
+#center {
+  text-align: center;
 }
 /* Waves */
 .wave1 {
@@ -309,4 +313,41 @@ header nav a:active {
   .timeline ul li:hover::before {
     background-color: var(--border);
   }
+}
+
+/* footer */
+footer {
+  padding: 2rem 0 0 0;
+  position: absolute;
+  background-color: var(--bg);
+  width: 100vw;
+  height: fit-content;
+}
+footer h2 {
+  text-transform: capitalize;
+  font-family: "JuliusSans", sans-serif;
+  font-size: 2rem;
+}
+footer h3 {
+  font-family: "JuliusSans", sans-serif;
+  font-weight: 800;
+  margin-bottom: 0.35rem;
+}
+.contact {
+  width: fit-content;
+  margin-left: 10vw;
+}
+.contact p {
+  margin: 0;
+}
+.skills i {
+  font-size: 1.5rem;
+  padding: 0 1vw;
+}
+#copyright {
+  margin: 0;
+  font-family: "JuliusSans", sans-serif;
+  font-weight: 300;
+  font-size: 0.5rem;
+  line-height: 0.5rem;
 }
