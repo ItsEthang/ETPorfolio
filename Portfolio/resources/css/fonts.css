@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "JuliusSans";
+  src: url("../fonts/JuliusSansOne-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MondaReg";
+  src: url("../fonts/Monda-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "MondaBold";
+  src: url("../fonts/Monda-Bold.ttf") format("truetype");
+}
