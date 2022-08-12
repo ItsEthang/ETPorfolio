@@ -17,11 +17,14 @@
       <div class="container">
         <a class="logo" href="./index.html">It's Ethang</a>
         <nav>
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#journey">Journey</a></li>
+          <ul id="nav-list">
+            <li class="nav-item"><a href="#about">About</a></li>
+            <li class="nav-item"><a href="#projects">Projects</a></li>
+            <li class="nav-item"><a href="#journey">Journey</a></li>
           </ul>
+          <label id="icon">
+            <i class="fa-solid fa-bars"></i>
+          </label>
         </nav>
       </div>
     </header>
@@ -102,14 +105,98 @@
         </h2>
       </div>
 
+      <div class="wave">
+        <div class="wave3">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M0,0V7.23C0,65.52,268.63,112.77,600,112.77S1200,65.52,1200,7.23V0Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </div>
+
       <section id="projects">
         <p>Here are the three of my favorite projects. Check them out!</p>
         <div class="proj-display">
-          <div class="mf-home"></div>
-          <div class="mf-articles"></div>
-          <div class="photographs"></div>
+          <div class="box">
+            <div class="text">
+              <h3>Monster Forest Company Page</h3>
+              <p>
+                My first HTML & CSS project. Built with VSCode. This project
+                serves as a company website for my fictional gym company
+                "Monster Forest". It has multiple pages and it is made
+                responsive with CSS.
+              </p>
+            </div>
+            <a href="">Check It Out</a>
+          </div>
+          <div class="box">
+            <div class="text">
+              <h3>Monster Forest Article Page</h3>
+              <p>
+                This is an expansion of the previous "Monster Forest" project.
+                This project serves as an article website about powerlifting
+                techniques. This project has much more functionalities than the
+                previous one. Here is the layout:
+              </p>
+              <ul>
+                <li>HTML & CSS: Page formatting and styling.</li>
+                <li>
+                  JavaScript: Interactive elements such as the content
+                  navigation tab.
+                </li>
+                <li>
+                  phpMyAdmin: Database for the user setups and the comment
+                  section.
+                </li>
+                <li>
+                  PHP: Setting user login cookies, hiding page content for
+                  non-users.
+                </li>
+                <li>AJAX: Update the comment section on the website.</li>
+              </ul>
+            </div>
+            <a href="">Check It Out</a>
+          </div>
+          <div class="box">
+            <div class="text">
+              <h3>Photograph Websites With Weebly</h3>
+              <p>
+                This is the first website I ever made! It was a high school
+                photography class website project made with Weebly. The website
+                is a summary of all the photographs I took throughout the
+                course, and a little bit about myself. Check it out if you are
+                interested.
+              </p>
+            </div>
+            <a href="">Check It Out</a>
+          </div>
         </div>
       </section>
+
+      <div class="wave">
+        <div class="wave4">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <rect x="1200" height="3.6"></rect>
+            <rect height="3.6"></rect>
+            <path
+              d="M0,0V3.6H580.08c11,0,19.92,5.09,19.92,13.2,0-8.14,8.88-13.2,19.92-13.2H1200V0Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </div>
 
       <section id="journey">
         <h2>
@@ -231,5 +318,6 @@
       </div>
       <p id="copyright">©Ethan Tang 2022</p>
     </footer>
+    <script src="../resources/js/script.js"></script>
   </body>
 </html>
